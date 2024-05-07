@@ -13,11 +13,13 @@ Sample assertions:
 assert btcTocad(1) == 45000
 (2 points) 
 """
-
-def btcTocad():
-    pass
-
-
+currBTC = 45000
+def btcTocad(x):
+    if type(x) != str:
+        y = currBTC*x
+        return y
+    elif type(x) == str:
+        return 'error'
 """
 This checks to see if you are running the program as the main script or
 if it is imported by another program.
@@ -26,5 +28,5 @@ are not executed.
 """
 if __name__ == "__main__":
     assert btcTocad(1) == 45000
-    assert btcTocad(2.5) == 135000
-    assert btcTocad(one) == 'error'
+    assert btcTocad(2.5) == 112500
+    assert btcTocad('one') == 'error'
