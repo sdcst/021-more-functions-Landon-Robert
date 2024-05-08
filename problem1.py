@@ -14,8 +14,14 @@ assert converTemp(32,'F') == 0
 """
 
 def convertTemp(x, type):
-    
-    return
+    if type == 'F':
+        a = (x - 32) * 5/9
+        a = round(a,2)
+        return a 
+    elif type == 'C':
+        a = (x * 9/5) + 32
+        a = round(a,2)
+        return a 
 
 def tests():
     assert convertTemp(10,'C') == 50.00

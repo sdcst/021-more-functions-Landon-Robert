@@ -21,8 +21,16 @@ assert triangle(1,1,4) == 0
 (2 points)
 """
 
-def triangle():
-    return
+def triangle(a,b,c):
+    if a <= 0 or b <= 0 or c <= 0:
+        ans = 0
+    elif
+        ans = 
+    elif a == b or a == c or b == c:
+        ans = 2
+    elif 
+
+    return ans
 
 def tests():
     assert triangle(12,5,13) == 2     
@@ -31,5 +39,5 @@ def tests():
     assert triangle(1,1,4) == 0  
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     tests()
